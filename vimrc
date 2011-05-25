@@ -64,8 +64,6 @@ set incsearch     " Incremental searching.
 set whichwrap+=<,>,h,l,b,[,] " Backspace and cursor keys wrap back to previous line!
 set history=2000             " Command history
 
-set statusline=%{GitBranch()}
-
 " Set map leader for misc normal mode commands.
 let mapleader = ","
 
