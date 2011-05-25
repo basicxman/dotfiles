@@ -1,0 +1,46 @@
+[
+  {
+    "repo-url": "git://github.com/altercation/vim-colors-solarized.git",
+    "folder":   "vim-colors-solarized"
+  },
+  {
+    "repo-url": "git://github.com/rson/vim-conque.git",
+    "folder":   "vim-conque"
+  },
+  {
+    "repo-url": "git://github.com/plasticboy/vim-markdown.git",
+    "folder":   "vim-markdown"
+  },
+  {
+    "repo-url": "git://github.com/scrooloose/nerdtree.git",
+    "folder":   "vim-nerd-tree"
+  },
+  {
+    "repo-url": "git://github.com/tpope/vim-surround.git",
+    "folder":   "vim-surround"
+  },
+  {
+    "repo-url": "git://github.com/vim-scripts/JSON.vim.git",
+    "folder":   "vim-json"
+  },
+  {
+    "repo-url": "git://github.com/skammer/vim-css-color.git",
+    "folder":   "vim-css-color"
+  },
+  { 
+    "repo-url": "git://github.com/vim-scripts/jQuery.git",
+    "folder":   "vim-jquery"
+  },
+  {
+    "repo-url": "git://github.com/vim-scripts/haskell.vim.git",
+    "folder":   "vim-haskell"
+  },
+  {
+    "repo-url": "git://github.com/mattn/gist-vim.git",
+    "folder":   "vim-gist"
+  },
+  {
+    "repo-url": "git://github.com/scrooloose/nerdcommenter.git",
+    "folder":   "vim-nerd-commenter"
+  }
+]
