@@ -1,17 +1,17 @@
 [user]
-	name = Andrew Horsman
-	email = minirobotics@gmail.com
+  name = Andrew Horsman
+  email = minirobotics@gmail.com
 [core]
-	editor = nano
+  editor = nano
 [colour]
-	diff = auto
-	status = auto
-	bracnh = auto
+  diff = auto
+  status = auto
+  bracnh = auto
 [diff]
-	color = auto
+  color = auto
 [alias]
   a = add                   # Add.
-  ac = git commit -a -m     # Add all files and commit with message.
+  ac = commit -a -m     # Add all files and commit with message.
   as = !git add . && git ss # Add all fiels and show status
   last = log -1             # Show last commit. 
   l = log                   # w00t, log.
