@@ -10,24 +10,29 @@
 [diff]
 	color = auto
 [alias]
-	ac = !git add . && git commit -m $1 # Add all files and commit with message.
-	as = !git add . && git status       # Add all files and show status.
-	last = log -1             # Show last commit. 
-	l = log                   # w00t, log.
-	ls = log --pretty=oneline # Show log with oneliners.
-	c = commit -m             # Commit with message.
-	d = diff HEAD HEAD~1      # Get a diff between the last commit and second last commit.
-	wd = !git diff $1 HEAD:$1	# Get a diff between the committed version of a file and the working version of a file.
-	s = status                # Full status.
-	ss = status -s            # Short statuses
-	t = tag                   # Tag current commit.
-	b = branch                # List branches.
-	db = branch -d            # Delete a branch.
-	sb = checkout             # Switch to a branch.
-	csb = checkout -b         # Create a new branch and switch to it.
-	m = merge                 # Merge a branch to the current one.
-	mt = mergetool            # Launch the merge tool (resolving configs).
-	lmb = branch --merged     # List all branches merged with the current one.
-	lnmb = branch --no-merged # List all branches not merged with the current one.
-	r = rebase                # Rebase a branch onto the current one.
-	p = push origin master    # GitHub push.
+  a = add                   # Add.
+  ac = git commit -a -m     # Add all files and commit with message.
+  as = !git add . && git ss # Add all fiels and show status
+  last = log -1             # Show last commit. 
+  l = log                   # w00t, log.
+  ls = log --pretty=oneline # Show log with oneliners.
+  c = commit -m             # Commit with message.
+  d = diff HEAD HEAD~1      # Get a diff between the last commit and second last commit.
+  ddm = diff master development # Get a diff between master and development.
+  wd = !git diff $1 HEAD:$1	# Get a diff between the committed version of a file and the working version of a file.
+  s = status                # Full status.
+  ss = status -s            # Short statuses
+  t = tag                   # Tag current commit.
+  b = branch                # List branches.
+  db = branch -d            # Delete a branch.
+  cb = checkout             # Checkout a branch.
+  ccb = checkout -b         # Create a new branch and checkout.
+  m = merge                 # Merge a branch to the current one.
+  mt = mergetool            # Launch the merge tool (resolving configs).
+  lmb = branch --merged     # List all branches merged with the current one.
+  lnmb = branch --no-merged # List all branches not merged with the current one.
+  r = rebase                # Rebase a branch onto the current one.
+  p = push origin master    # GitHub push.
+  pb = push origin          # Push to origin.
+  st = stash                # Stash current changes.
+  as = stash apply          # Apply last stash.
