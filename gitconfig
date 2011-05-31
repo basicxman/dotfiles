@@ -6,7 +6,7 @@
 [colour]
   diff = auto
   status = auto
-  bracnh = auto
+  branch = auto
 [diff]
   color = auto
 [alias]
