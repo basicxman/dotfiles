@@ -2,7 +2,7 @@
   name = Andrew Horsman
   email = minirobotics@gmail.com
 [core]
-  editor = nano
+  editor = vim
 [colour]
   diff = auto
   status = auto
