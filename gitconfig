@@ -11,8 +11,8 @@
   color = auto
 [alias]
   a = add                   # Add.
-  ac = commit -a -m     # Add all files and commit with message.
-  as = !git add . && git ss # Add all fiels and show status
+  ac = commit -a -m         # Add all files and commit with message.
+  aws = !git add . && git ss # Add all fiels and show status
   last = log -1             # Show last commit. 
   l = log                   # w00t, log.
   ls = log --pretty=oneline # Show log with oneliners.
