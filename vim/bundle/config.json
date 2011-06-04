@@ -8,10 +8,6 @@
     "folder":   "vim-conque"
   },
   {
-    "repo-url": "git://github.com/plasticboy/vim-markdown.git",
-    "folder":   "vim-markdown"
-  },
-  {
     "repo-url": "git://github.com/scrooloose/nerdtree.git",
     "folder":   "vim-nerd-tree"
   },
@@ -40,7 +36,27 @@
     "folder":   "vim-gist"
   },
   {
+    "repo-url": "git://github.com/tsaleh/vim-align.git",
+    "folder":   "vim-align"
+  },
+  {
+    "repo-url": "git://github.com/vim-scripts/Command-T.git",
+    "folder":   "vim-command-t"
+  },
+  {
     "repo-url": "git://github.com/scrooloose/nerdcommenter.git",
     "folder":   "vim-nerd-commenter"
+  },
+  {
+    "repo-url": "git://github.com/ervandew/supertab.git",
+    "folder":   "vim-supertab"
+  },
+  {
+    "repo-url": "git://github.com/robgleeson/hammer.vim.git",
+    "folder":   "vim-hammer"
+  },
+  {
+    "repo-url": "git://github.com/mattn/zencoding-vim.git",
+    "folder":   "vim-zencoding"
   }
 ]

@@ -4,6 +4,7 @@
 # For use with Pathogen.
 
 require 'json/pure'
+require 'fileutils'
 
 cur_dir = File.dirname(__FILE__) + "/"
 repos   = JSON.parse(File.read(cur_dir + "config.json"))
