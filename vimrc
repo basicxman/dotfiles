@@ -34,6 +34,16 @@ if has("gui_running")
   set guioptions-=T
 endif
 
+if has("gui_macvim")
+  map <D-t> :CommandT<CR>
+  imap <D-t> <Esc>:CommandT<CR>
+endif
+
+map <D-e> <Leader>v:ConqueTerm bash<CR>
+map <D-/> <plug>NERDCommenterToggle<CR>
+map <D-/> <Esc><plug>NERDCommenterToggle<R>i
+map <Leader>p :Hammer<CR>
+
 " <injekt> In many terminal emulators the mouse works just fine, thus enable
 " it.
 if has('mouse')
@@ -63,6 +73,8 @@ set incsearch     " Incremental searching.
 
 set whichwrap+=<,>,h,l,b,[,] " Backspace and cursor keys wrap back to previous line!
 set history=2000             " Command history
+
+set clipboard=unnamed " Share system clipboard.
 
 " Set map leader for misc normal mode commands.
 let mapleader = ","
@@ -114,6 +126,10 @@ imap <C-space> <Esc>
 inoremap <S-Right> <Esc>$i
 inoremap <S-Left> <Esc>^i
 
+" Sometimes I have a comment on the above line and would instead like to
+" append it to the next line.
+nmap <Leader>lda ^d$j$a<Space><C-V>
+
 " Sorry, no mercy.
 nnoremap <Left> :echoe "Use h!"<CR>
 nnoremap <Right> :echoe "Use l!"<CR>
@@ -123,4 +139,4 @@ nnoremap <Down> :echoe "Use j"<CR>
 " Gist
 let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
-source gist_credentials.vim
+source ~/gist_credentials.vim
