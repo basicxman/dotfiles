@@ -58,5 +58,9 @@
   {
     "repo-url": "git://github.com/mattn/zencoding-vim.git",
     "folder":   "vim-zencoding"
+  },
+  {
+    "repo-url": "git://github.com/vim-scripts/Command-T.git",
+    "folder":   "vim-command-t"
   }
 ]

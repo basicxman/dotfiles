@@ -9,6 +9,8 @@ endif
 if has("win32")
   :cd C:\Users\Andrew
   set guifont=Consolas
+else
+  :cd ~/Dropbox/Development
 endif
 
 " autocmd options
@@ -32,17 +34,19 @@ endif
 " gvim options
 if has("gui_running")
   set guioptions-=T
+  set guioptions+=LlRrb " Small hack to remove scrollbars in gvim.
+  set guioptions-=LlRrb
 endif
 
 if has("gui_macvim")
-  map <D-t> :CommandT<CR>
-  imap <D-t> <Esc>:CommandT<CR>
+  let g:CommandTMaxHeight=20
 endif
 
 map <D-e> <Leader>v:ConqueTerm bash<CR>
 map <D-/> <plug>NERDCommenterToggle<CR>
-map <D-/> <Esc><plug>NERDCommenterToggle<R>i
 map <Leader>p :Hammer<CR>
+
+map <D-t> :CommandT<CR>
 
 " <injekt> In many terminal emulators the mouse works just fine, thus enable
 " it.
