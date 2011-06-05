@@ -1,0 +1,10 @@
+if [[ -s /Users/basicxman/.rvm/scripts/rvm ]] ; then source /Users/basicxman/.rvm/scripts/rvm ; fi
+
+export CLOJURE_LEIN_HOME=/usr/local/src/clojure/lein
+export ERLANG_HOME=/usr/local/src/erlang
+export SCALA_HOME=/usr/local/src/scala
+export PATH=/opt/local/bin:/opt/local/sbin:$CLOJURE_LEIN_HOME:$ERLANG_HOME/bin:$SCALA_HOME/bin:$PATH
+function mkcd() { mkdir -p "$@" && eval cd "\"\$$#\""; }
+function EXT_COLOR() { echo -ne "\[\033[38;5;$1m\]"; }
+
+export PS1="\# \w$ "
