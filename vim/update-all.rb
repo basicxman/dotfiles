@@ -7,9 +7,12 @@ require 'json/pure'
 
 pipe = "> /dev/null 2>&1" if ARGV[0].nil?
 cur_dir = File.dirname(__FILE__) + "/"
-repos = JSON.parse(File.read(cur_dir + "config.json"))
+
+`curl https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim > #{cur_dir}autoload/pathogen.vim`
+
+repos = JSON.parse(File.read(cur_dir + "bundle/config.json"))
 repos.each do |repo|
-  folder_path = cur_dir + repo["folder"]
+  folder_path = cur_dir + "bundle/" + repo["folder"]
   repo_url = repo["repo-url"]
 
   if File.exists? folder_path

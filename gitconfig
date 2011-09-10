@@ -10,29 +10,38 @@
 [diff]
   color = auto
 [alias]
-  a = add                   # Add.
-  ac = commit -a -m         # Add all files and commit with message.
-  aws = !git add . && git ss # Add all fiels and show status
-  last = log -1             # Show last commit. 
-  l = log                   # w00t, log.
-  ls = log --pretty=oneline # Show log with oneliners.
-  c = commit -m             # Commit with message.
-  d = diff HEAD HEAD~1      # Get a diff between the last commit and second last commit.
-  ddm = diff master development # Get a diff between master and development.
-  wd = !git diff $1 HEAD:$1	# Get a diff between the committed version of a file and the working version of a file.
-  s = status                # Full status.
-  ss = status -s            # Short statuses
-  t = tag                   # Tag current commit.
-  b = branch                # List branches.
-  db = branch -d            # Delete a branch.
-  cb = checkout             # Checkout a branch.
-  ccb = checkout -b         # Create a new branch and checkout.
-  m = merge                 # Merge a branch to the current one.
-  mt = mergetool            # Launch the merge tool (resolving configs).
-  lmb = branch --merged     # List all branches merged with the current one.
-  lnmb = branch --no-merged # List all branches not merged with the current one.
-  r = rebase                # Rebase a branch onto the current one.
-  p = push origin master    # GitHub push.
-  pb = push origin          # Push to origin.
-  st = stash                # Stash current changes.
-  as = stash apply          # Apply last stash.
+  a = add                    # Add.
+  ac = commit -a -m          # Add all files and commit with message.
+  aws = !git add . && git ss # Add all files and show status.
+  last = log -1 --stat       # Show last commit. 
+  lastd = log -1 --stat -p   # Show last commit with diff.
+  ls = log --pretty=oneline
+  l = log                    # w00t, log.
+  lf = log --pretty=full     # Full log.
+  lff = log --pretty=fuller  # Fuller log.
+  c = commit -m              # Commit with message.
+  ca = commit --amend        # Amend commit.
+  d = diff HEAD HEAD~1       # Get a diff between the last commit and second last commit.
+  wd = !git diff $1 HEAD:$1	 # Get a diff between the committed version of a file and the working version of a file.
+  s = status                 # Full status.
+  ss = status -s             # Short statuses
+  t = tag                    # Tag current commit.
+  b = branch                 # List branches.
+  db = branch -d             # Delete a branch.
+  cb = checkout              # Checkout a branch.
+  ccb = checkout -b          # Create a new branch and checkout.
+  m = merge                  # Merge a branch to the current one.
+  r = rebase                 # Rebase a branch onto the current one.
+  p = push                   # Push branch.
+  f = fetch                  # Fetch remote.
+  fu = fetch upstream        # Fetch upstream branches.
+  rv = remote -v             # List all remotes.
+  bv = branch -a             # List all (including remote) branches.
+  gh = "!f() { git remote add $1 git@github.com:$2; }; f" # Add a remote branch from GitHub
+  un = git reset HEAD        # Unstage files.
+  graph = log --graph --oneline # ASCII graph.
+  sub = submodule update --init --recursive # Initialize and pull all submodules.
+  st = stash                 # Stash current changes.
+  sl = stash list            # List stashes.
+  as = stash apply           # Apply a stash.
+  asl = stash apply stash@{0} # Apply last stash.

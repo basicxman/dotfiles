@@ -1,5 +1,21 @@
 [
   {
+    "repo-url": "git://github.com/vim-scripts/ZoomWin.git",
+    "folder":   "vim-zoomwin"
+  },
+  {
+    "repo-url": "git://github.com/mileszs/ack.vim",
+    "folder":   "vim-ack"
+  },
+  {
+    "repo-url": "git://github.com/mhz/vim-matchit.git",
+    "folder":   "vim-matchit"
+  },
+  {
+    "repo-url": "git://github.com/tpope/vim-haml.git",
+    "folder":   "vim-sass"
+  },
+  {
     "repo-url": "git://github.com/altercation/vim-colors-solarized.git",
     "folder":   "vim-colors-solarized"
   },
@@ -20,47 +36,15 @@
     "folder":   "vim-json"
   },
   {
-    "repo-url": "git://github.com/skammer/vim-css-color.git",
-    "folder":   "vim-css-color"
-  },
-  { 
-    "repo-url": "git://github.com/vim-scripts/jQuery.git",
-    "folder":   "vim-jquery"
-  },
-  {
     "repo-url": "git://github.com/vim-scripts/haskell.vim.git",
     "folder":   "vim-haskell"
-  },
-  {
-    "repo-url": "git://github.com/mattn/gist-vim.git",
-    "folder":   "vim-gist"
   },
   {
     "repo-url": "git://github.com/tsaleh/vim-align.git",
     "folder":   "vim-align"
   },
   {
-    "repo-url": "git://github.com/vim-scripts/Command-T.git",
-    "folder":   "vim-command-t"
-  },
-  {
     "repo-url": "git://github.com/scrooloose/nerdcommenter.git",
     "folder":   "vim-nerd-commenter"
-  },
-  {
-    "repo-url": "git://github.com/ervandew/supertab.git",
-    "folder":   "vim-supertab"
-  },
-  {
-    "repo-url": "git://github.com/robgleeson/hammer.vim.git",
-    "folder":   "vim-hammer"
-  },
-  {
-    "repo-url": "git://github.com/mattn/zencoding-vim.git",
-    "folder":   "vim-zencoding"
-  },
-  {
-    "repo-url": "git://github.com/vim-scripts/Command-T.git",
-    "folder":   "vim-command-t"
   }
 ]

@@ -31,6 +31,8 @@ if has("autocmd")
   au! BufRead,BufNewFile *.js   set filetype=javascript syntax=jquery
 endif
 
+runtime! macros/matchit.vim
+
 " gvim options
 if has("gui_running")
   set guioptions-=T
@@ -40,13 +42,12 @@ endif
 
 if has("gui_macvim")
   let g:CommandTMaxHeight=20
-endif
 
-map <D-e> <Leader>v:ConqueTerm bash<CR>
-map <D-/> <plug>NERDCommenterToggle<CR>
-map <Leader>p :Hammer<CR>
-
-map <D-t> :CommandT<CR>
+  map <D-e> <Leader>v:ConqueTerm bash<CR>
+  map <D-/> <plug>NERDCommenterToggle<CR>
+  imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
+  map <D-F> :Ack<space>
+end
 
 " <injekt> In many terminal emulators the mouse works just fine, thus enable
 " it.
@@ -54,14 +55,12 @@ if has('mouse')
   set mouse=a
 endif
 
-
 " Regular options
 " ---------------
 set nocompatible  " Who the hell uses vi?
 set title         " Set window title
 set number        " Line numbering
 set showmatch     " Match opening/closing punctuation together
-set nobackup      " Git is my backup.
 set nowritebackup " Git is my backup.
 set foldenable    " Folding <3 (take that injekt!)
 set noswapfile    " wurt.
@@ -74,14 +73,22 @@ set splitbelow    " Splitting buffers goes below instead of above
 set showmatch     " Matching brackets/braces etc
 set nohlsearch    " Highlighting searches are so annoying.
 set incsearch     " Incremental searching.
+set noequalalways
+set list listchars=tab:\ \ ,trail:.
+set backupdir=~/.vim/backup
+set directory=~/.vim/backup
 
 set whichwrap+=<,>,h,l,b,[,] " Backspace and cursor keys wrap back to previous line!
 set history=2000             " Command history
 
 set clipboard=unnamed " Share system clipboard.
 
+cmap w!! %!sudo tee < /dev/null %
+
 " Set map leader for misc normal mode commands.
 let mapleader = ","
+
+map <Leader><Leader> :ZoomWin<CR>
 
 " Indentation
 set autoindent
@@ -97,8 +104,10 @@ set wildmode=list:longest,list:full
 " Themeing
 " FYI, Solarized plugin is a massive amount of #winning
 syntax enable
-set background=dark
-colorscheme solarized
+if has("gui_running")
+  set background=dark
+  colorscheme solarized
+endif
 
 " Keyboard shortcuts
 nmap <C-t> :tabnew<CR>
@@ -112,6 +121,19 @@ imap <C-S-Tab> <Esc>:tabp<CR>
 
 nmap <C-d> dd
 imap <C-d> <Esc>dd
+
+" Retrace movements.
+nmap <Leader>f <C-O>
+nmap <Leader>r <C-I>
+
+" Last modification
+nmap <Leader>l `.
+
+" Move between splits
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-H> <C-W>h
+map <C-L> <C-W>l
 
 nmap <C-S> :update<CR>
 imap <C-S> <Esc>:update<CR>
