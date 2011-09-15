@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head>
+        <title>basicxman subscriptions in Google Reader</title>
+    </head>
+    <body>
+        <outline title="All Items" text="All Items">
+            <outline text="24 ways" title="24 ways" type="rss"
+                xmlUrl="http://feeds.feedburner.com/24ways" htmlUrl="http://24ways.org/"/>
+            <outline text="24 Ways To Start" title="24 Ways To Start"
+                type="rss"
+                xmlUrl="http://feeds.feedburner.com/24WaysToStart" htmlUrl="http://24waystostart.com"/>
+            <outline text="BetterExplained" title="BetterExplained"
+                type="rss"
+                xmlUrl="http://feeds.feedburner.com/Betterexplained" htmlUrl="http://betterexplained.com"/>
+            <outline text="Bill's Blog" title="Bill's Blog" type="rss"
+                xmlUrl="http://frcdirector.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://frcdirector.blogspot.com/"/>
+            <outline text="Coding Horror" title="Coding Horror"
+                type="rss"
+                xmlUrl="http://feeds.feedburner.com/codinghorror/" htmlUrl="http://www.codinghorror.com/blog/"/>
+            <outline text="FreelanceFolder" title="FreelanceFolder"
+                type="rss"
+                xmlUrl="http://feeds.feedburner.com/freelancefolder/" htmlUrl="http://freelancefolder.com"/>
+            <outline text="Hacker News" title="Hacker News" type="rss"
+                xmlUrl="http://news.ycombinator.com/rss" htmlUrl="http://news.ycombinator.com/"/>
+            <outline text="High Scalability" title="High Scalability"
+                type="rss"
+                xmlUrl="http://feeds.feedburner.com/HighScalability" htmlUrl="http://highscalability.com/blog/"/>
+            <outline text="JavaScript, JavaScript"
+                title="JavaScript, JavaScript" type="rss"
+                xmlUrl="http://feeds.feedburner.com/JavascriptJavascript" htmlUrl="http://javascriptweblog.wordpress.com"/>
+            <outline text="Joel on Software" title="Joel on Software"
+                type="rss"
+                xmlUrl="http://www.joelonsoftware.com/rss.xml" htmlUrl="http://www.joelonsoftware.com"/>
+            <outline text="John Resig" title="John Resig" type="rss"
+                xmlUrl="http://feeds.feedburner.com/JohnResig" htmlUrl="http://ejohn.org"/>
+            <outline text="Katz Got Your Tongue?"
+                title="Katz Got Your Tongue?" type="rss"
+                xmlUrl="http://feeds.feedburner.com/KatzGotYourTongue" htmlUrl="http://yehudakatz.com/"/>
+            <outline
+                text="Lambda the Ultimate - Programming Languages Weblog"
+                title="Lambda the Ultimate - Programming Languages Weblog"
+                type="rss"
+                xmlUrl="http://lambda-the-ultimate.org/rss.xml" htmlUrl="http://lambda-the-ultimate.org"/>
+            <outline text="Life is Iterative" title="Life is Iterative"
+                type="rss"
+                xmlUrl="http://blog.iamjvn.com/feeds/posts/default" htmlUrl="http://blog.iamjvn.com/"/>
+            <outline text="Like Dream of Banister Fiend"
+                title="Like Dream of Banister Fiend" type="rss"
+                xmlUrl="http://banisterfiend.wordpress.com/feed/" htmlUrl="http://banisterfiend.wordpress.com"/>
+            <outline text="One Thing Well" title="One Thing Well"
+                type="rss" xmlUrl="http://onethingwell.org/rss" htmlUrl="http://onethingwell.org/"/>
+            <outline text="Paul Irish" title="Paul Irish" type="rss"
+                xmlUrl="http://feeds.feedburner.com/paul-irish" htmlUrl="http://paulirish.com"/>
+            <outline text="programming" title="programming" type="rss"
+                xmlUrl="http://www.reddit.com/r/programming/.rss" htmlUrl="http://www.reddit.com/r/programming/"/>
+            <outline text="Programming in the 21st Century"
+                title="Programming in the 21st Century" type="rss"
+                xmlUrl="http://prog21.dadgum.com/atom.xml" htmlUrl="http://prog21.dadgum.com/"/>
+            <outline text="Railscasts" title="Railscasts" type="rss"
+                xmlUrl="http://feeds.feedburner.com/railscasts" htmlUrl="http://railscasts.com"/>
+            <outline text="Riding Rails - home"
+                title="Riding Rails - home" type="rss"
+                xmlUrl="http://feeds.feedburner.com/RidingRails" htmlUrl="http://weblog.rubyonrails.org/"/>
+            <outline text="ROBOTC.net Blog" title="ROBOTC.net Blog"
+                type="rss" xmlUrl="http://www.robotc.net/blog/?feed=rss" htmlUrl="http://www.robotc.net/blog"/>
+            <outline text="Scott Hanselman's Computer Zen"
+                title="Scott Hanselman's Computer Zen" type="rss"
+                xmlUrl="http://feeds.feedburner.com/ScottHanselman" htmlUrl="http://www.hanselman.com/blog/"/>
+            <outline text="Smashing Magazine" title="Smashing Magazine"
+                type="rss"
+                xmlUrl="http://rss1.smashingmagazine.com/feed/" htmlUrl="http://www.smashingmagazine.com/"/>
+            <outline text="Subtle Entropy" title="Subtle Entropy"
+                type="rss" xmlUrl="http://blog.injekt.net/feed" htmlUrl="http://blog.injekt.net"/>
+            <outline text="Super User Blog" title="Super User Blog"
+                type="rss" xmlUrl="http://blog.superuser.com/feed/" htmlUrl="http://blog.superuser.com"/>
+            <outline text="techno.blog(&quot;Dion&quot;)"
+                title="techno.blog(&quot;Dion&quot;)" type="rss"
+                xmlUrl="http://almaer.com/blog/index.xml" htmlUrl="http://almaer.com/blog"/>
+            <outline text="The Art of Non-Conformity"
+                title="The Art of Non-Conformity" type="rss"
+                xmlUrl="http://chrisguillebeau.com/3x5/feed/" htmlUrl="http://chrisguillebeau.com"/>
+            <outline text="The Daily WTF" title="The Daily WTF"
+                type="rss"
+                xmlUrl="http://syndication.thedailywtf.com/TheDailyWtf" htmlUrl="http://thedailywtf.com/"/>
+            <outline text="The Official Google Blog"
+                title="The Official Google Blog" type="rss"
+                xmlUrl="http://feeds.feedburner.com/blogspot/MKuf" htmlUrl="http://googleblog.blogspot.com/"/>
+            <outline text="Weblog posts" title="Weblog posts" type="rss"
+                xmlUrl="http://qfox.nl/weblog.rss" htmlUrl="http://qfox.nl/weblog"/>
+        </outline>
+    </body>
+</opml>

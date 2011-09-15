@@ -74,7 +74,6 @@ set showmatch     " Matching brackets/braces etc
 set nohlsearch    " Highlighting searches are so annoying.
 set incsearch     " Incremental searching.
 set noequalalways
-set list listchars=tab:\ \ ,trail:.
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
