@@ -3,6 +3,7 @@
   email = minirobotics@gmail.com
 [core]
   editor = vim
+  excludesfile = /Users/andrew/.gitignore
 [colour]
   diff = auto
   status = auto
@@ -22,7 +23,7 @@
   c = commit -m              # Commit with message.
   ca = commit --amend        # Amend commit.
   d = diff HEAD HEAD~1       # Get a diff between the last commit and second last commit.
-  wd = !git diff $1 HEAD:$1	 # Get a diff between the committed version of a file and the working version of a file.
+  wd = !git diff $1 HEAD:$1   # Get a diff between the committed version of a file and the working version of a file.
   s = status                 # Full status.
   ss = status -s             # Short statuses
   t = tag                    # Tag current commit.
