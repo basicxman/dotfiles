@@ -28,7 +28,7 @@ if has("autocmd")
 
   " JSON.vim
   au! BufRead,BufNewFile *.json set filetype=json foldmethod=syntax 
-  au! BufRead,BufNewFile *.js   set filetype=javascript syntax=jquery
+  "au! BufRead,BufNewFile *.js   set filetype=javascript syntax=jquery
 endif
 
 runtime! macros/matchit.vim
@@ -143,6 +143,9 @@ nmap <Leader>vrc :tabedit $MYVIMRC<CR>
 nmap <Leader>nt :NERDTreeToggle<CR>
 nmap <Leader>h :split<CR>
 nmap <Leader>v :vs<CR>
+
+" Caps lock is mapped to F2 using http://pqrs.org/macosx/keyremap4macbook/extra.html
+map! <F2> <C-n>
 
 " Escape alternative
 imap <C-space> <Esc>

@@ -39,7 +39,7 @@
   rv = remote -v             # List all remotes.
   bv = branch -a             # List all (including remote) branches.
   gh = "!f() { git remote add $1 git@github.com:$2; }; f" # Add a remote branch from GitHub
-  un = git reset HEAD        # Unstage files.
+  un = reset HEAD        # Unstage files.
   graph = log --graph --oneline # ASCII graph.
   sub = submodule update --init --recursive # Initialize and pull all submodules.
   st = stash                 # Stash current changes.

@@ -13,7 +13,8 @@ export PSQL_HOME=/opt/local/lib/postgresql90
 export DEV_HOME=/Developer/usr/bin
 export CLANG_HOME=/usr/local/src/clang
 export PARALLELIZE_HOME=/usr/local/src/parallelize
-export PATH=$PARALLELIZE_HOME:$CLANG_HOME/bin:$DEV_HOME:/opt/local/bin:/opt/local/sbin:$CLOJURE_LEIN_HOME:$ERLANG_HOME/bin:$SCALA_HOME/bin:$PSQL_HOME/bin:$PATH
+export TEX4T_HOME=/usr/local/src/tex4t/bin/unix
+export PATH=$TEX4T_HOME:$PARALLELIZE_HOME:$CLANG_HOME/bin:$DEV_HOME:/opt/local/bin:/opt/local/sbin:$CLOJURE_LEIN_HOME:$ERLANG_HOME/bin:$SCALA_HOME/bin:$PSQL_HOME/bin:$PATH
 function mkcd() { mkdir -p "$@" && eval cd "\"\$$#\""; }
 function EXT_COLOR() { echo -ne "\[\033[38;5;$1m\]"; }
 
